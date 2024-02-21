@@ -7,7 +7,7 @@ To run this application locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   https://github.com/Nithish-14/Shiniunicorns.git
+   git clone https://github.com/Nithish-14/Shiniunicorns.git
 
 2. Navigate into the project directory:
 
