@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-# Shiniunicorns
-=======
 Shiniunicorns
->>>>>>> master
