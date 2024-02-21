@@ -20,7 +20,12 @@ const Navbar = () => {
     return (
         <>
             <nav className="navbar" id="navbar">
-                <Link className="link-element" to="/"><h1 className="navbar-logo">SHINIUNICORNS</h1></Link>
+                <Link className="link-element" to="/">
+                    <div className="navbar-logo-container">
+                        <img src="/images/logo.jpg" alt="website logo" className="navbar-logo" />
+                        <p className="navbar-web-para">SHINIUNICORNS</p>
+                    </div>
+                </Link>
                 <div className="nav-link-container">
                     <Link className="link-element" to="/">
                         <button type="button" className={path === "/" ? "active-nav-link" : "nav-link"}>HOME</button>

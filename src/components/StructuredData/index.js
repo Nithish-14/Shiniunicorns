@@ -9,7 +9,7 @@ const StructuredData = () => {
         "@type": "Organization",
         "name": "ShiniUnicorns",
         "url": "https://www.shiniunicorns.com",
-        "logo": "https://www.shiniunicorns.com/images/logo.png",
+        "logo": "https://www.shiniunicorns.com/images/logo.jpg",
         "description": "Revolutionizing agriculture and industrial heating with state-of-the-art solar solutions.",
         "contactPoint": {
           "@type": "ContactPoint",
