@@ -1,0 +1,100 @@
+.contact-page {
+    min-height: calc(100vh - 85px);
+    width: 100%;
+}
+
+.contact-page-bg{
+    background-image: url('../../assets/Solar_Panels_Inspection.b1819dbe.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 43vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contact-page-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.contact-page-heading {
+    color: #f1f1f1;
+    font-size: 50px;
+    letter-spacing: 1.4px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    z-index: 2;
+}
+
+.contact-page-heading2 {
+    color: green;
+    padding-bottom: 8px;
+    border-bottom: solid 3px green;
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contact-page-container {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-container {
+    width: 100%;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.contact-para2 {
+    color: #3c3a3a;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1.5;
+    margin: 10px 0px 17px; 
+}
+
+.email-anchor {
+    color: #0787d2;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-page-heading { 
+        font-size: 40px;
+    }
+
+    .contact-page-bg {
+        height: 35vh;
+    }
+
+    .contact-page-container {
+        padding-left: 0px;
+        padding-right: 18px;
+    }
+
+    .contact-container {
+        padding-left: 18px;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1170px) {
+    .contact-container {
+        padding-left: 30px;
+    }
+}

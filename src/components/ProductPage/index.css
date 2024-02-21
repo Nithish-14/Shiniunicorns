@@ -1,0 +1,129 @@
+.product-page {
+    min-height: calc(100vh - 85px);
+    width: 100%;
+}
+
+.product-page-main-container {
+    padding: 30px 100px 60px;
+}
+
+.product-page-main-heading {
+    color: green;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.product-page-sub-heading {
+    color: green;
+    display: inline-block;
+    font-size: 25px;
+    padding-bottom: 8px;
+    border-bottom: solid 3px green;
+}
+
+.product-page-product-container {
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.product-content-container {
+    width: 49%;
+    padding-left: 30px;
+}
+
+.product-description {
+    color: #302c2c;
+    line-height: 1.6;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.product-page-image-container {
+    width: 35%;
+    height: 370px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.product-page-image1{
+    background-image: url('../../assets/https___www.solar-payback.com_gallery_photos_full_Turkey_Sunstrip_solarbooster_agriculture1.jpeg');
+}
+
+.product-page-image2{
+    background-image: url('../../assets/https___www.solar-payback.com_gallery_photos_full_Solarwall_Spain_Spain_SolarwallSpain_Foodandbeverage_2.png');
+}
+
+.product-page-image3{
+    background-image: url('../../assets/https___www.solar-payback.com_gallery_photos_full_Mexico_Inventive_Power_Food_and_Beverage_6.jpg');
+}
+
+.why-choose-us-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-choose-us-para {
+    color: #302c2c;
+    line-height: 1.6;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    margin: 0px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-page-main-container {
+        padding: 30px 18px 40px;
+    }
+
+    .product-page-main-heading {
+        margin-bottom: 50px;
+    }
+
+    .product-content-container {
+        width: 100%;
+        padding-left: 18px;
+    }
+
+    .product-page-image-container {
+        display: none;
+    }
+
+    .product-page-product-container {
+        margin-bottom: 20px;
+    }
+
+    .why-choose-us-para {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1170px) {
+    .product-page-main-container {
+        padding: 30px 30px 60px;
+    }
+
+    .product-page-sub-heading {
+        font-size: 23px;
+    }
+
+    .product-description, .why-choose-us-para {
+        font-size: 17px;
+    }
+}
