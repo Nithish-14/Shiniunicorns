@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.app-container {
+    height: 100vh;
+    background-color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stop-scroll {
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link-element {
+    text-decoration: none;
+    color: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ a {
+    text-decoration: none;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .whatsapp-icon {
+    position: fixed;
+    background-color: #22C56B;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    border: none;
+    border-radius: 50%;
+    bottom: 30px;
+    left: 40px;
+    z-index: 10;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ .whatsapp-icon:hover {
+    transform: scale(1.14);
+    opacity: 0.9;
+ }
+
+ @media screen and (max-width: 768px) {
+    .whatsapp-icon {
+        left: 20px;
+    }
+ }
+
+ .loader-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }

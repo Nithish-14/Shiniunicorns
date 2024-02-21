@@ -1,0 +1,220 @@
+.mission-page {
+    min-height: calc(100vh - 85px);
+    width: 100%;
+}
+
+.misison-page-bg {
+    height: calc(100vh - 85px);
+    background-image: url('../../assets/https___www.solar-payback.com_gallery_photos_full_France_Newheat_Feed_and_Beverage_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.misison-page-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.mission-page-main-heading {
+    color: #f1f1f1;
+    font-size: 35px;
+    letter-spacing: 0.75px;
+    width: 50%;
+    text-align: center;
+    line-height: 1.4;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    z-index: 2;
+}
+
+.mission-page-span {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.mission-page-content-container {
+    padding: 50px 100px;
+}
+
+.misison-page-welcome-para {
+    color: #302c2c;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.8px;
+    width: 100%;
+    text-align: center;
+}
+
+.misson-page-heading {
+    color: green;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 25px;
+    padding-bottom: 8px;
+    border-bottom: solid 3px green;
+}
+
+.mission-container {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mission-content-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mission-heading {
+    color: #3c3a3a;
+    line-height: 1.7;
+    font-weight: 800;
+    width: 85%;
+}
+
+.mission-para {
+    color: #302c2c;
+    line-height: 1.7;
+    width: 90%;
+    font-size: 17px;
+}
+
+.vision-heading {
+    color: #3c3a3a;
+    line-height: 1.7;
+    font-weight: 800;
+    width: 85%;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.vision-para {
+    color: #302c2c;
+    line-height: 1.7;
+    width: 90%;
+    font-size: 17px;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.mission-page-image {
+    background-image: url('../../assets/mission.jpg');
+    width: 35%;
+    height: 350px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mission-page-image2 {
+    background-image: url('../../assets/vision.jpg');
+    width: 35%;
+    height: 350px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+    .misison-page-bg {
+        height: 50vh;
+    }
+
+    .mission-page-main-heading {
+        width: 95%;
+        font-size: 32px;
+    }
+
+    .mission-page-span {
+        font-size: 32px;
+        border-bottom: solid 3px white;
+    }
+
+    .mission-page-content-container {
+        padding: 30px 18px;
+    }
+
+    .mission-container {
+        padding: 20px 0px;
+    }
+
+    .mission-content-container {
+        width: 100%;
+    }
+
+    .mission-page-image, .mission-page-image2 {
+        display: none;
+    }
+
+    .mission-heading {
+        margin-top: -10px;
+        width: 100%;
+        margin-bottom: 0px;
+        font-size: 28px;
+    }
+
+    .vision-heading, .vision-para {
+        text-align: left;
+        align-self: flex-start;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .vision-heading {
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (min-width: 770px) and (max-width: 1170px) {
+    .mission-page-main-heading {
+        width: 70%;
+        font-size:32px;
+    }
+
+    .mission-page-span {
+        font-size: 48px;
+    }
+
+    .mission-page-content-container {
+        padding: 50px 30px;
+    }
+
+    .misson-page-heading {
+        font-size: 23px;
+    }
+
+    .mission-container {
+        justify-content: space-between;
+    }
+
+    .mission-content-container {
+        width: 60%;
+    }
+
+    .mission-heading, .vision-heading {
+        font-size: 28px;
+    }
+
+    .mission-page-image, .mission-page-image2 {
+     height: 200px;
+    }
+}

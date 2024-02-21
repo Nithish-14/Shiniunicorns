@@ -1,0 +1,499 @@
+.home-page {
+    min-height: calc(100vh - 85px);
+    width: 100%;
+}
+
+.landing-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 85px);
+    padding: 0px 60px;
+    justify-content: space-between;
+}
+
+.landing-section-mobile-bg {
+    background-image: none;
+    height: calc(100vh - 85px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing-section-content-container {
+    width: 50%;
+}
+
+.landing-section-heading {
+    color: #3c3a3a;
+    font-size: 43px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    line-height: 1.4;
+    margin-bottom: 0px;
+}
+
+
+.landing-section-para {
+    color: #302c2c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    margin-top: 25px;
+    width: 85%;
+}
+
+.landing-image {
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../../assets/IMG-20240216-WA0007.jpg');
+    height: 400px;
+    width: 480px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .landing-section {
+        padding: 120px 18px 100px;
+        padding-right: 40px;
+        height: calc(100vh - 85px);
+        align-items: flex-start;
+    }
+
+    .landing-section-mobile-bg {
+        background-image: url('../../assets/mobilebg5.jpg');
+        background-position: 30% 40%;
+    }
+
+    .landing-section-content-container {
+        width: 100%;
+    }
+
+    .landing-section-heading {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .landing-section-para {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .landing-image {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1170px) {
+    .landing-section {
+        padding: 0px 30px;
+    }
+
+    .landing-section-heading {
+        font-size: 34px;
+    }
+
+    .landing-section-content-container {
+        width: 65%;
+    }
+
+    .landing-image {
+        height: 270px;
+        width: 270px;
+        max-width: 35%;
+    }
+}
+
+.why-choose-us {
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.why-choose-heading {
+    color: green;
+    display: inline-block;
+    font-size: 25px;
+    padding-bottom: 8px;
+    border-bottom: solid 3px green;
+    margin-bottom: 20px;
+}
+
+.why-choose-heading2 {
+    color: green;
+    display: inline-block;
+    font-size: 25px;
+    padding-bottom: 8px;
+    border-bottom: solid 3px green;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+
+.why-choose-shadow-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 25px;
+    width: 90%;
+    height: 140px;
+    transition: all 1s;
+    border-radius: 10px;
+    margin-bottom:15px;
+}
+
+.why-choose-sub-heading {
+    color: #3c3a3a;
+    font-size: 23px;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.why-choose-para {
+    color: #302c2c;
+    line-height: 1.7;
+    margin: 0px;
+}
+
+.check-button {
+    background-color: #ffffff;
+    border: none;
+    color: green;
+    height: 45px;
+    width: 45px;
+    padding: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-right: 28px;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 20px -7px #575454;
+}
+
+.why-choose-shadow-container:hover {
+    -webkit-box-shadow: -3px 12px 75px -32px rgba(33,29,33,1);
+    -moz-box-shadow: -3px 12px 75px -32px rgba(33,29,33,1);
+    box-shadow: -3px 12px 75px -32px rgba(33,29,33,1);
+}
+
+.why-choose-shadow-container:hover .check-button {
+    background-color: green;
+    color: #ffffff;
+}
+
+.whychoose-image-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-choose-image1 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../../assets/IMG-20240216-WA0005.jpg');
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+    transform: translate(100px, -70px);
+}
+
+.why-choose-image2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../../assets/IMG-20240216-WA0006.jpg');
+    height: 220px;
+    width: 220px;
+    border-radius: 25px;
+    transform: translate(-20px, 100px);
+    z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+    .why-choose-us {
+        padding: 0px 18px;
+        align-items: center;
+    }
+
+    .why-choose-heading2 {
+        margin-left: 18px;
+    }
+
+    .whychoose-image-container {
+        display: none;
+    }
+
+    .why-choose-shadow-container {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1170px) { 
+    .why-choose-us {
+        padding: 0px 30px;
+    }
+
+    .why-choose-heading {
+        font-size: 23px;
+    }
+
+    .why-choose-heading2 {
+        font-size: 23px;
+        margin-left: 30px;
+    }
+
+    .why-choose-shadow-container {
+        width: 100%;
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    .why-choose-sub-heading {
+        font-size: 21px;
+        margin-bottom: 13px;
+    }
+
+    .check-button {
+        margin-right: 25px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .why-choose-image1 {
+        width: 260px;
+        height: 260px;
+    }
+
+    .why-choose-image2 {
+        width: 190px;
+        height: 190px;
+    }
+}
+
+.product-section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.product-section-image-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.product-section-image1 {
+  background-image: url('../../assets/https___www.solar-payback.com_gallery_photos_full_Turkey_Sunstrip_solarbooster_agriculture1.jpeg');
+  height: 100%;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-section-image2 {
+    background-image: url('../../assets/https___www.solar-payback.com_gallery_photos_full_Solarwall_Spain_Spain_SolarwallSpain_Foodandbeverage_2.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-section-image3 {
+    background-image: url('../../assets/https___www.solar-payback.com_gallery_photos_full_Mexico_Inventive_Power_Food_and_Beverage_6.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-section-image1:hover {
+    filter: grayscale(0);
+    flex-grow: 1.2;
+}
+
+.product-section-image2:hover {
+    filter: grayscale(0);
+    flex-grow: 1.2;
+}
+
+.product-section-image3:hover {
+    filter: grayscale(0);
+    flex-grow: 1.2;
+}
+
+.product-heading {
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-section-image-container {
+        flex-direction: column;
+    }
+
+    .product-section-image1, .product-section-image2, .product-section-image3 {
+        width: 100%;
+    }
+
+    .product-heading {
+        font-size: 26px;
+    }
+
+}
+
+@media screen and (min-width: 770px) and (max-width: 1170px) {
+    .product-section-image-container {
+        flex-direction: column;
+    }
+
+    .product-section-image1, .product-section-image2, .product-section-image3 {
+        width: 100%;
+    }
+
+    .product-heading {
+        font-size: 26px;
+    }
+}
+
+
+.join-us-section {
+    width: 100%;
+    padding: 75px 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.joinus-heading {
+    color: green;
+    font-size: 30px;
+    margin-bottom: 12px; 
+}
+
+.joinus-para {
+    color: #302c2c;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.8px;
+    width: 65%;
+}
+
+@media screen and (max-width: 768px) {
+    .join-us-section {
+        padding: 75px 18px 80px;
+    }
+
+    .joinus-heading {
+        font-size: 26px;
+        line-height: 1.5;
+        margin-bottom: 0px;
+    }
+
+    .joinus-para {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1170px) {
+    .joinus-para {
+        width: 75%;
+    }
+
+    .join-us-section {
+        padding-top: 70px;
+    }
+}
+
+.achievement-section {
+    width: 100%;
+    padding: 80px 100px 40px;
+}
+
+.achievement-heading {
+    color: green;
+    display: inline-block;
+    font-size: 25px;
+    padding-bottom: 8px;
+    border-bottom: solid 3px green;
+    margin-bottom: 20px;
+}
+
+.achievement-container {
+    display: flex;
+    align-items: center;
+}
+
+.achievement-icon {
+    width:  5%;
+} 
+
+.achievement {
+    font-size: 26px;
+    color: #302c2c;
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+
+@media screen and (max-width: 768px) {
+    .achievement-section {
+        padding: 80px 18px 30px;
+    }
+
+    .achievement-icon {
+        width: 10%;
+    }
+    
+    .achievement {
+        font-size: 19px;
+        line-height: 1.7;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1170px) {
+    .achievement-section {
+        padding: 80px 30px 0px;
+    }
+
+    .achievement-heading {
+        font-size: 23px;
+    }
+
+    .achievement {
+        font-size: 22px;
+    }
+}

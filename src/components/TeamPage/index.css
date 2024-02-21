@@ -1,0 +1,75 @@
+.team-page {
+    min-height: calc(100vh - 85px);
+    width: 100%;
+}
+
+.team-page-bg {
+    background-image: url('../../assets/solar-panel-installation-technicians.jpg');
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.team-page-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.team-page-main-heading {
+    color: #f1f1f1;
+    font-size: 39px;
+    letter-spacing: 0.75px;
+    line-height: 1.4;
+    font-weight: 700;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    z-index: 2;
+}
+
+.team-page-conent-container {
+    padding: 80px 0px 40px;
+    text-align: center;
+}
+
+.team-page-name-para {
+    color: #3c3a3a;
+    margin: 0px;
+    margin-bottom: 16px;
+    font-size: 26px;
+    letter-spacing: 0.8px;
+}
+
+.team-page-description-para {
+    color: rgb(120, 116, 116);
+    margin: 0px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .team-page-bg {
+        height: 45vh;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1170px) {
+    .team-page-main-heading {
+        font-size: 32px;
+    }
+
+    .team-page-name-para {
+        font-size: 25px;
+    }
+}

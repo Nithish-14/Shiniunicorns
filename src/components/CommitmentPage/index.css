@@ -1,0 +1,161 @@
+.commitment-page {
+    min-height: calc(100vh - 85px);
+    width: 100%;
+}
+
+.commitment-page-bg {
+    height: calc(100vh - 85px);
+    background-image: url('../../assets/commitment.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.commitment-page-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.commitment-page-main-heading {
+    color: #f1f1f1;
+    font-size: 39px;
+    letter-spacing: 0.75px;
+    width: 50%;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 800;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    z-index: 2;
+}
+
+.commitment-page-heading {
+    color: green;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 25px;
+    padding-bottom: 8px;
+    border-bottom: solid 3px green;
+}
+
+.commitment-card-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+
+.card-component {
+    border-radius: 10px;
+    padding: 40px 25px 30px 25px;
+    width: 450px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07); 
+    margin-right: 60px;
+    height: 350px;
+}
+
+.commitment-card-component {
+    border-radius: 10px;
+    padding: 40px 25px 30px 25px;
+    width: 450px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07); 
+    margin-right: 60px;
+    height: 350px;
+}
+
+.card-heading {
+    color: #3c3a3a;
+    line-height: 1.4;
+    margin: 0px;
+    font-size: 28px;
+}
+
+.card-para {
+    color: #302c2c;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 768px) {
+    .commitment-page-main-heading {
+        width: 95%;
+        font-size: 32px;
+    }
+
+    .commitment-page-bg {
+        height: 50vh;
+    }
+
+    .error-head1 {
+        width: 60%;
+    }
+
+    .commitment-card-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .card-component {
+        width: 100%;
+        margin-right: 0px;
+        padding-left: 20px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .commitment-card-component {
+        width: 100%;
+        margin-right: 0px;
+        padding-left: 20px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (min-width: 770px) and (max-width: 1170px) {
+    .commitment-page-main-heading {
+        font-size: 32px;
+        width: 70%;
+    }
+
+    .commitment-page-heading {
+        font-size: 23px;
+    }
+
+    .commitment-card-container {
+        flex-wrap: wrap;
+    }
+
+    .card-heading {
+        font-size: 24px;
+    }
+
+    .card-component {
+        width: 40%;
+        padding-left: 20px;
+        height: 380px;
+        margin-bottom: 40px;
+    }
+
+    .commitment-card-component {
+        width: 40%;
+        padding-left: 20px;
+        height: 380px;
+    }
+}
