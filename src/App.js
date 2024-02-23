@@ -3,7 +3,8 @@ import {Routes, Route} from 'react-router-dom';
 import { Discuss } from 'react-loader-spinner'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You also need to import the CSS file for styles
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import { FaWhatsapp } from "react-icons/fa6";
 import HomePage from "./components/HomePage";

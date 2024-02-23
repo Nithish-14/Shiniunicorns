@@ -1,15 +1,44 @@
 import React from "react";
+import Slider from 'react-slick';
 import Footer from '../Footer'
 import Navbar from '../Navbar';
 import './index.css'
+
+const ProductPageSlider = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 4000,
+        arrows: false
+    }
+
+    return (
+        <div className="product-slider-container">
+            <Slider {...settings}>
+                <div className="product-page-slider-image-container">
+                    <img src="/images/product1.jpg" alt="product" className="product-image-slider" />
+                </div>
+                <div>
+                    <img src="/images/product2.jpg" alt="product" className="product-image-slider" />
+                </div>
+                <div>
+                    <img src="/images/product3.jpg" alt="product" className="product-image-slider" />
+                </div>
+            </Slider>
+        </div>
+    );
+}
  
 const ProductPage = () => (
     <>
     <Navbar />
     <div className="product-page" id="product">
+        <ProductPageSlider />
         <div className="product-page-main-container">
             <h1 className="product-page-main-heading">Our Solar Energy Solutions</h1>
-            <h1 className="product-page-sub-heading">Solar Air Heating System</h1>
+            <h1 className="product-page-sub-heading" id="productAir">Solar Air Heating System</h1>
             <div className="product-page-product-container">
                 <ul className="product-content-container">
                     <li className="product-description" data-aos="fade-right">Our patented Solar Collectors seamlessly blend into industry rooftops, converting inert surfaces into efficient energy hubs</li>
@@ -18,7 +47,7 @@ const ProductPage = () => (
                 </ul>
                 <div className="product-page-image-container product-page-image1"></div>
             </div>
-            <h1 className="product-page-sub-heading">Solar Water Heating System</h1>
+            <h1 className="product-page-sub-heading" id="productWater">Solar Water Heating System</h1>
             <div className="product-page-product-container">
                 <ul className="product-content-container">
                     <li className="product-description" data-aos="fade-right">Our Industrial Solar Water Heating system effortlessly integrates with existing infrastructure, providing a steady supply of hot water at precise temperatures</li>
@@ -27,7 +56,7 @@ const ProductPage = () => (
                 </ul>
                 <div className="product-page-image-container product-page-image2"></div>
             </div>
-            <h1 className="product-page-sub-heading">Solar PV System</h1>
+            <h1 className="product-page-sub-heading" id="productPV">Solar PV System</h1>
             <div className="product-page-product-container">
                 <ul className="product-content-container">
                     <li className="product-description" data-aos="fade-right">We provide top-quality solar photovoltaic systems for businesses, ensuring reliable performance and significant cost savings</li>
