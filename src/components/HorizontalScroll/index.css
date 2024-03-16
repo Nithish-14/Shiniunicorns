@@ -1,17 +1,15 @@
 .horizontal-scroll-container {
     width: 100%;
     overflow: hidden;
-    /* border: solid 1px red; */
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 5;
     padding-top: 18px;
 }
 
 .horizontal-scrolling-items {
     display: flex;
-    color: #302c2c;
-    color: green;
     color: #1A68CD;
     font-size: 19px;
     font-weight: 500;
@@ -33,4 +31,11 @@
 @keyframes infiniteScroll {
     from {transform: translateX(60%)}
     to {transform: translateX(-100%)}
+}
+
+@media screen and (max-width: 768px) {
+  .horizontal-scrolling-items {
+    color: #035fd7;
   }
+  
+}
