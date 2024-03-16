@@ -5,7 +5,7 @@
 
 .commitment-page-bg {
     height: calc(100vh - 85px);
-    background-image: url('../../assets/commitment.jpeg');
+    background-image: url('../../assets/core-value-page.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

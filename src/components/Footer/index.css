@@ -11,8 +11,8 @@
 
 .footer-image {
     text-align: center;
-    width: 85px;
-    height: 85px;
+    width: 130px;
+    height: 130px;
     margin-bottom: 10px;
 }
 
@@ -99,6 +99,11 @@
         margin-right: 18px;
         margin-left: 18px;
         margin-bottom: 60px;
+    }
+
+    .footer-image {
+        height: 100px;
+        width: 100px;
     }
 
     .address-container, .address-container2 {

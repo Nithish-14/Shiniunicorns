@@ -1,0 +1,138 @@
+.knowledge-center-page {
+    min-height: calc(100vh - 85px);
+    width: 100%;
+}
+
+.knowledge-center-landing-container {
+    width: 100%;
+    height: 43vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/https___www.solar-payback.com_gallery_photos_full_Solarwall_Spain_Spain_SolarwallSpain_Foodandbeverage_2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0px 10px;
+}
+
+.knowledge-center-landing-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.knowledge-center-heading {
+    color: #f1f1f1;
+    font-size: 50px;
+    letter-spacing: 1.4px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    z-index: 2;
+    text-align: center;
+}
+
+.knowledge-center-book-container {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.book-list-element {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin: auto;
+    margin-bottom: 45px;
+}
+
+.book1 {
+    background-image: url('../../assets/book1-images-1.jpg');
+}
+.book2 {
+    background-image: url('../../assets/book2-images-1.jpg');
+}
+.book3 {
+    background-image: url('../../assets/book3-images-1.jpg');
+}
+.book4 {
+    background-image: url('../../assets/book4-images-1.jpg');
+}
+.book5 {
+    background-image: url('../../assets/book5-images-1.jpg');
+}
+.book6 {
+    background-image: url('../../assets/book6-images-1.jpg');
+}
+.book7 {
+    background-image: url('../../assets/book7-images-1.jpg');
+}
+.book8 {
+    background-image: url('../../assets/book8-images-1.jpg');
+}
+.book9 {
+    background-image: url('../../assets/book9-images-1.jpg');
+}
+.book10 {
+    background-image: url('../../assets/book10-images-1.jpg');
+}
+.book11 {
+    background-image: url('../../assets/book11-images-1.jpg');
+}
+.book12 {
+    background-image: url('../../assets/book12-images-1.jpg');
+}
+.book13 {
+    background-image: url('../../assets/book13-images-1.jpg');
+}
+
+.book-anchor {
+    /* border: solid 3px orange; */
+    width: 260px;
+    height: 100%;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+    .book-list-element {
+        width: 88%;
+    }
+
+    .knowledge-center-heading {
+        font-size: 40px;
+    }
+
+    .knowledge-center-landing-container {
+        height: 35vh;
+    }
+
+    .book-anchor {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 770px) and (max-width: 1170px) {
+    .book-anchor {
+        width: 220px;
+    }
+
+    .book-list-element {
+        height: 315px;
+    }
+}

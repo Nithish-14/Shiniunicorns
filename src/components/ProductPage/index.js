@@ -54,7 +54,7 @@ const ProductPage = () => (
                     <li className="product-description" data-aos="fade-right">By eliminating the need for conventional boilers and offering an ROI under 2.5 years, our system significantly reduces energy expenses while ensuring environmentally friendly operations</li>
                     <li className="product-description" data-aos="fade-right">Successfully implemented across diverse industries, our Solar Water Heating system provides a reliable and cost-effective solution for businesses reliant on copious hot water</li>
                 </ul>
-                <div className="product-page-image-container product-page-image2"></div>
+                <div className="product-page-image-container product-page-image3"></div>
             </div>
             <h1 className="product-page-sub-heading" id="productPV">Solar PV System</h1>
             <div className="product-page-product-container">
@@ -63,7 +63,7 @@ const ProductPage = () => (
                     <li className="product-description" data-aos="fade-right">By harnessing solar energy, businesses can significantly reduce their carbon footprint and contribute to a cleaner, more sustainable future</li>
                     <li className="product-description" data-aos="fade-right">With solar photovoltaic costs plummeting since 2010, our systems offer rapid ROI and long-term savings on energy expenses, rivaling traditional fossil fuel sources</li>
                 </ul>
-                <div className="product-page-image-container product-page-image3"></div>
+                <div className="product-page-image-container product-page-image2"></div>
             </div>
             <div className="why-choose-us-container">
                 <h1 className="product-page-main-heading" style={{marginBottom: '50px'}}>Why Choose Us?</h1>

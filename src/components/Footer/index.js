@@ -8,7 +8,7 @@ import './index.css'
 const Footer = () => (
         <footer className="footer">
             <a href="#navbar" rel="noreferrer"><button type="button" className="rocket-button"><IoMdRocket size={25} /></button></a>
-            <img src="/images/logo.jpg" alt="website logo" className="footer-image" />
+            <img src="/images/logo1.png" alt="website logo" className="footer-image" />
             <h1 className="footer-heading">Shiniunicorns Solar Technologies Private Limited</h1>
             <div className="address-container">
                 <IoLocationSharp color="#ffffff" size={25} style={{marginTop: '5px'}} className="footer-icon" />

@@ -1,13 +1,14 @@
 .home-page {
     min-height: calc(100vh - 85px);
     width: 100%;
+    position: relative;
 }
 
 .landing-section {
     width: 100%;
     display: flex;
     align-items: center;
-    height: calc(100vh - 85px);
+    min-height: calc(100vh - 85px);
     padding: 0px 60px;
     justify-content: space-between;
 }
@@ -16,13 +17,15 @@
     display: flex;
     align-items: center;
     width: 350px;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
+    max-width: 100%;
 }
 
 .landing-section-mobile-bg {
     background-image: none;
-    height: calc(100vh - 85px);
+    min-height: calc(100vh - 85px);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -56,17 +59,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('../../assets/IMG-20240216-WA0007.jpg');
-    height: 400px;
-    width: 480px;
+    background-image: url('../../assets/landingImage.jpg');
+    height: 440px;
+    width: 580px;
 }
 
 
 @media screen and (max-width: 768px) {
     .landing-section {
-        padding: 120px 18px 100px;
+        padding: 120px 18px 80px;
         padding-right: 40px;
-        height: calc(100vh - 85px);
+        min-height: calc(100vh - 85px);
         align-items: flex-start;
     }
 
@@ -85,7 +88,7 @@
     }
 
     .landing-section-para {
-        font-size: 20px;
+        font-size: 18px;
         width: 100%;
     }
 
@@ -104,13 +107,13 @@
     }
 
     .landing-section-content-container {
-        width: 65%;
+        width: 60%;
     }
 
     .landing-image {
-        height: 270px;
-        width: 270px;
-        max-width: 35%;
+        height: 300px;
+        /* width: 270px; */
+        max-width: 40%;
     }
 }
 
@@ -120,7 +123,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .why-choose-heading {
@@ -206,11 +209,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url('../../assets/IMG-20240216-WA0005.jpg');
-    height: 300px;
-    width: 300px;
+    background-image: url('../../assets/whychoose1.jpg');
+    height: 340px;
+    width: 80%;
     border-radius: 25px;
-    transform: translate(100px, -70px);
+    transform: translate(70px, -70px);
 }
 
 .why-choose-image2 {
@@ -218,10 +221,10 @@
     background-position: center;
     background-size: cover;
     background-image: url('../../assets/IMG-20240216-WA0006.jpg');
-    height: 220px;
-    width: 220px;
+    height: 270px;
+    width: 70%;
     border-radius: 25px;
-    transform: translate(-20px, 100px);
+    transform: translate(-30px, 100px);
     z-index: 3;
 }
 
@@ -242,7 +245,12 @@
     .why-choose-shadow-container {
         width: 100%;
         height: auto;
-        padding: 20px 10px;
+        padding: 20px 0px;
+        padding-left: 10px;
+    }
+
+    .check-button {
+        margin-right: 20px;
     }
 }
 
@@ -372,6 +380,7 @@
 
     .product-section-image1, .product-section-image2, .product-section-image3 {
         width: 100%;
+        filter: grayscale(0);
     }
 
     .product-heading {
@@ -450,7 +459,7 @@
     padding: 80px 100px 40px;
 }
 
-.achievement-parent-container {
+/* .achievement-parent-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -463,25 +472,25 @@
 
 .achievement-section-slider-container {
     width: 45%;
-}
+} */
 
 
-@media screen and (min-width: 770px) and (max-width: 1170px) {
+/* @media screen and (min-width: 770px) and (max-width: 1170px) {
     .achievement-section-slider-container {
         width: 48%;
     }
-}
+} */
 
-.achievement-image-container {
+/* .achievement-image-container {
     width: 100%;
 }
 
 .achievement-image {
     width: 100%;
     height: 300px;
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .achievement-parent-container {
         flex-direction: column;
     }
@@ -498,9 +507,9 @@
     .achievement-image {
         height: 250px;
     }
-}
+} */
 
-.achievement-heading {
+.sdg-heading {
     color: green;
     display: inline-block;
     font-size: 25px;
@@ -509,11 +518,84 @@
     margin-bottom: 20px;
 }
 
-.achievement-container {
-    display: flex;
-    align-items: center;
+.sdg-para {
+    color: #302c2c;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.8px;
+    width: 100%;
+    /* margin-top: 10px; */
 }
 
+.sdg-goals-container {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sdg-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+
+.sdg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .sdg-goals-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sdg-item {
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+
+    /* .sdg-overlay {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.15);
+    } */
+}
+
+.sdg-item:hover .sdg-overlay {
+    display: flex;
+}
+
+.sdg-item-7 {
+    background-image: url('../../assets/E_WEB_07.png');
+}
+
+.sdg-item-9 {
+    background-image: url('../../assets/E_WEB_09.png');
+}
+
+.sdg-item-12 {
+    background-image: url('../../assets/E_WEB_12.png');
+}
+
+
+/* .achievement-container {
+    display: flex;
+    align-items: center;
+} */
+/* 
 .achievement-icon {
     width: 5%;
 } 
@@ -524,14 +606,14 @@
     display: flex;
     align-items: center;
     width: 95%;
-}
+} */
 
-@media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) { 
     .achievement-section {
-        padding: 80px 18px 30px;
+        padding: 80px 18px 50px;
     }
 
-    .achievement-icon {
+    /* .achievement-icon {
         width: 10%;
     }
     
@@ -539,19 +621,19 @@
         font-size: 19px;
         line-height: 1.7;
         width: 90%;
-    }
-}
+    } */
+} 
 
 @media screen and (min-width: 770px) and (max-width: 1170px) {
     .achievement-section {
-        padding: 80px 30px 0px;
+        padding: 70px 30px 70px;
     }
 
-    .achievement-heading {
+    .sdg-heading {
         font-size: 23px;
     }
 
-    .achievement {
+    /* .achievement {
         font-size: 22px;
-    }
+    } */
 }

@@ -1,0 +1,36 @@
+.horizontal-scroll-container {
+    width: 100%;
+    overflow: hidden;
+    /* border: solid 1px red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 18px;
+}
+
+.horizontal-scrolling-items {
+    display: flex;
+    color: #302c2c;
+    color: green;
+    color: #1A68CD;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.8px;
+    width: 100%;
+    width: 2600px;
+    animation-name: infiniteScroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+.horizontal-scrolling-items__item {
+    white-space: nowrap;
+    user-select: none;
+}
+
+@keyframes infiniteScroll {
+    from {transform: translateX(60%)}
+    to {transform: translateX(-100%)}
+  }

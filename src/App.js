@@ -16,6 +16,8 @@ import FoundingPage from "./components/FoundingPage";
 import ProductPage from "./components/ProductPage";
 import NotFound from "./components/NotFound";
 import TeamPage from "./components/TeamPage";
+import AchievementPage from "./components/AchievementPage";
+import KnowledgeCenter from "./components/KnowledgeCenter";
 import StructuredData from "./components/StructuredData";
 import './App.css'
 
@@ -107,8 +109,10 @@ const App = () => {
                         <Route exact path="/value-commitment" element={<CommitmentPage />} />
                         <Route exact path="/founding-story" element={<FoundingPage />} />
                         <Route exact path="/product" element={<ProductPage />} />
+                        <Route exact path="/knowledge-center" element={<KnowledgeCenter />} />
                         <Route exact path="/contact" element={<ContactPage />} />
                         <Route exact path="/our-team" element={<TeamPage />} />
+                        <Route exact path="/achievements" element={<AchievementPage />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </NavContext.Provider>
